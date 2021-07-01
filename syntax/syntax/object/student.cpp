@@ -1,8 +1,13 @@
-#include <iostream>
 #include "include/student.h"
 
-using namespace std;
+//Student::Student(int sex){
+//    this->student_sex = sex;
+//}
 
-void Student::say(){
-    cout<<"i am a student!"<<endl;
+void Student::study(){
+    cout<<"i am a stuent i can study"<<endl;
+}
+
+void Student::sex(){
+    cout<<"sex="<<this->student_sex<<endl;
 }
