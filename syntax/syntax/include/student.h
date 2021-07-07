@@ -11,8 +11,12 @@ class Student:public People
 public:
    void study();
    void sex();
-   Student();
+   Student(int x):People(x){}
+   Student(int x,int y):People(x){
+       cout<<"x="<<x<<"y="<<y<<endl;
+   }
    int student_sex;
+   void speak();
 };
 
 #endif

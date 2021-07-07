@@ -8,8 +8,11 @@ class People
 {
 public:
     void eat();
-    People(int sex);
+    People(int sex){
+        this->g_sex = sex;
+    }
     int g_sex;
+    virtual void speak() = 0 ;
 };
 
 #endif
